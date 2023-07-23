@@ -1,0 +1,98 @@
+﻿CaYa
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker</title>
+    <style>
+        /* İsteğe bağlı stil ayarları */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #eeeee4; /* Arka plan rengini beyaz yapar */
+        }
+
+        <style >
+        /* İsteğe bağlı stil ayarları */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        canvas {
+            background-color: white;
+            border: 1px solid #ccc;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .color {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        /* Seçilen rengi vurgula */
+        .selected {
+            border: 2px solid black;
+        }
+
+        /* Sayaç stil ayarları */
+        #counter {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pixel Art Maker</h1>
+
+    <div>
+        <canvas id="pixelCanvas" width="1200" height="500"></canvas>
+    </div>
+
+    <div>
+        <div class="color" style="background-color: black;"></div>
+        <div class="color" style="background-color: gray;"></div>
+        <div class="color" style="background-color: silver;"></div>
+        <div class="color" style="background-color: white;"></div>
+        <div class="color" style="background-color: brown;"></div>
+        <div class="color" style="background-color: yellow;"></div>
+        <div class="color" style="background-color: orange;"></div>
+        <div class="color" style="background-color: red;"></div>
+        <div class="color" style="background-color: lightcoral;"></div>
+        <div class="color" style="background-color: pink;"></div>
+        <div class="color" style="background-color: green;"></div>
+        <div class="color" style="background-color: lightgreen;"></div>
+        <div class="color" style="background-color: blue;"></div>
+        <div class="color" style="background-color: lightblue;"></div>
+        <div class="color" style="background-color: blueviolet;"></div>
+        <div class="color" style="background-color: purple;"></div>
+        <div class="color" style="background-color: lavender;"></div>
+        <div class="color" style="background-color: aqua;"></div>
+        <div class="color" style="background-color: teal;"></div>
+        <div class="color" style="background-color: forestgreen;"></div>
+        <div class="color" style="background-color: navy;"></div>
+        <div class="color" style="background-color: indigo;"></div>
+        <div class="color" style="background-color: maroon;"></div>
+        <div class="color" style="background-color: gold;"></div>
+
+        <!-- Diğer renkler buraya eklenebilir -->
+    </div>
+
+    <div>
+        <p>Piksel Hakkı: <span id="pixelCounter">1</span></p>
+        <div id="counter">30</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

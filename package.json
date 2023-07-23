@@ -1,0 +1,17 @@
+{
+  "name": "pixelart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.0",
+    "mongosh": "^1.10.1",
+    "socket.io": "^4.7.1"
+  }
+}
