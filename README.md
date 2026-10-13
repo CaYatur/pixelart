@@ -12,4 +12,4 @@ r/place benzeri çok oyunculu piksel tuvali. Node.js + Socket.IO sunucusu, Mongo
 
 ---
 
-Çağan Turgut · [caganturgut.com](https://caganturgut.com) · [GitHub](https://github.com/CaYatur)
+Çağan Turgut · [GitHub](https://github.com/CaYatur)
